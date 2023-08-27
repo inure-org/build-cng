@@ -1,0 +1,6 @@
+io.openshift.tags=inure-gitaly
+io.openshift.wants=inure-webservice
+io.k8s.description=container de gitaly service do inure
+io.openshift.non-scalable=false
+io.openshift.min-memory=200Mi
+io.openshift.min-cpu=100m
