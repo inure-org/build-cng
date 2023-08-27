@@ -1,0 +1,24 @@
+## configuração gitaly (padrão)
+# o diretório onde executáveis gitaly estão armazenados
+bin_dir = "/usr/local/bin"
+
+# escutar por um socket tcp. isso é inseguro (sem autenticação)
+listen_addr = "0.0.0.0:8075"
+
+# configurações do executável git
+[git]
+use_bundled_binaries = true
+
+# configuração de armazenamento, esperado em $HOME
+[[storage]]
+name = "default"
+path = "/home/git/repositories"
+
+[logging]
+format = "json"
+level = "info"
+dir = "/var/log/gitaly"
+
+[inure-shell]
+# diretório no qual o inure-shell esteja instalado
+dir = "/srv/inure-shell"
