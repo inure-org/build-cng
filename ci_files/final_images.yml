@@ -1,0 +1,41 @@
+.final_images: &final_images
+  - job: certificates
+  - job: cfssl-self-sign
+  - job: inure-base
+  - job: inure-ruby
+  - job: gitaly
+  - job: inure-container-registry
+  - job: inure-exporter
+  - job: inure-geo-logcursor
+    optional: true
+  - job: inure-mailroom
+  - job: inure-pages
+  - job: inure-shell
+  - job: inure-kas
+  - job: inure-rails-ee
+    optional: true
+  - job: inure-rails-ce
+    optional: true
+  - job: inure-sidekiq-ee
+    optional: true
+  - job: inure-sidekiq-ce
+    optional: true
+  - job: inure-toolbox-ee
+    optional: true
+  - job: inure-toolbox-ce
+    optional: true
+  - job: inure-webservice-ee
+    optional: true
+  - job: inure-webservice-ce
+    optional: true
+  - job: inure-workhorse-ee
+    optional: true
+  - job: inure-workhorse-ce
+    optional: true
+  - job: kubectl
+  - job: inure-zoekt-webserver
+    optional: true
+  - job: inure-zoekt-dynamic-indexserver
+    optional: true
+  - job: inure-zoekt-indexer
+    optional: true
